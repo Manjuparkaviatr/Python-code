@@ -1,0 +1,413 @@
+[200~# Example of variables & data types
+"""
+a = -456789876548
+b = 4567876.543223
+c = 5j
+d = 'Hello world !@#$ 123'
+e = False
+
+# example of print() - function
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(a,b,c,d,e,2345)
+"""
+
+# trio: value, memory, data type
+"""
+a = 4j
+print(a)      # value
+print(id(a))  # memeory address
+print(type(a))# data type
+"""
+
+# type casting
+"""
+a=float(100) # 100.0       
+print(a,type(a))
+
+b=int(187346.9999) # 187346 
+print(b,type(b))
+
+c = str(100)        # c = "100"
+print(c,type(c))
+
+d = int("5678")    # 
+print(d,type(d))
+
+e = bool(0)
+print(e,type(e))
+"""
+
+# input() - python standard function
+"""
+print("Enter a number")
+a = input()
+x = float(a)
+print("the user value =",x,type(x))
+
+print("Enter a number b")
+b = float(input())
+print("the user value =",b,type(b))
+
+c = x + b
+print(c,type(c))
+
+"""
+# operators (symbols)
+# arithmetic operator
+"""
+print(10 + 3)   # 13
+print(10 - 3)   # 7
+print(10 * 3)   # 30
+print(10 ** 3)  # 10 power of 3 = 10 * 10 * 10 = 1000
+print(10 / 3)   # 3.3333333333333
+print(10 // 2)  # Quotient 
+print(10 % 2)   # Remainder
+"""
+
+# assignment operator (while loop)
+"""
+a = 10
+print(a)  # 10
+
+a += 5    # a = a + 5
+print(a)  # a = 15
+
+a *= 2    # a = a * 2
+print(a)  # a = 30
+"""
+
+# comparision operator, returns True/ False, (if else, while loop)
+"""
+print(10 == 10)     # T 
+print(10 != 10)     # F
+print(10 >= 10)     # T
+print(10 > 10)      # F
+print(10 <= 10)     # T
+print(10 < 10)      # F
+"""
+
+# logical operator - and , or , not
+"""
+print(10==10 and 4<6) # T and T = T
+print(10==10 and 4>6) # T and F = F
+print(10==10 or 4>6)  # T or F  = T
+print(not 10==10)     # not T =   F
+"""
+
+# pep8 
+"""
+a=10
+b = 20
+c                     =                               50
+print(a,b,c)
+"""
+
+# Collections
+
+# List - collection of data types
+#   vs
+# array - collection of similar data type
+
+
+# List - 
+"""
+#    0   1         2        3   4   - indexes
+a = [1,2.44,"hello world",False,5,1,1,1,1,1,1] # allows duplicate members
+print(a,type(a))
+
+print(a[2])  # ordered
+a[2] = 'apple' # changeable
+print(a)
+"""
+
+# String Functions
+# List Functions
+# Tuple Functions
+# Set Functions
+
+# tuple
+"""
+#    0   1         2        3   4   - indexes
+a = (1,2.44,"hello world",False,5,1,1,1,1,1,1) # allows duplicate members
+print(a,type(a))
+
+print(a[2])  # ordered
+a[2] = 'apple' # unchangeable, throw error
+"""
+
+# set
+"""
+#     0   1   2  3    4   5
+a = {'a','b','c','a','a','b'} # no duplicate members
+print(a,type(a)) # unordered
+print(a[0])      # unindexed, throws error
+"""
+
+# if else
+# loop
+# functions
+
+# if else (decision statement)
+# syntax
+"""
+if <condition T/F>:
+elif <condition T/F>:
+else:
+"""
+
+# example 1
+"""
+a = 100
+if a>10:
+    print("a is bigger than 10")
+"""
+
+# example 2
+"""
+a = 100
+if a>10:
+    print("a is bigger than 10") # Indentation
+    print("code inside if condition")
+    print("end of if condition")
+print("end of python code")
+"""
+
+# if + else + indentation
+"""
+a = 5
+if a>10:
+    print("a is bigger than 10") # Indentation
+    print("code inside if condition")
+    print("end of if condition")
+else:
+    print("a is smaller than 10")
+    print("end of else condition")
+
+print("end of python code")
+"""
+
+# if + elif + else
+"""
+a = 1
+if a>10:
+    print("a is bigger than 10") # Indentation
+    print("code inside if condition")
+    print("end of if condition")
+elif a==10:
+    print("a is equal to 10")
+else:
+    print("a is smaller than 10")
+    print("end of else condition")
+print("end of python code")
+"""
+
+
+# loops
+# while loop - numbers
+# for loop   - string/ list
+
+
+# while loop - numbers
+# syntax
+# while <condition T/F>:
+"""
+a = 1
+while a<=5:
+    print(a)
+    a = a + 1
+print("loop over")
+"""
+
+# while loop
+# infinite loop
+"""
+a = 50                # intilization, start
+while a<=100:         # condition, stop
+    print(a)
+    a += 5         # incrementation, jump
+print("loop over")
+"""
+
+# while loop
+# Ctrl + C = KeyboardInterrupt
+"""
+a = 1
+while a>0:
+    print(a)
+    a = a + 1
+print("loop over")
+"""
+
+# for loop   - string/ list
+# syntax 
+# for <variable> in <string/list>:
+
+# string - fetches letter by letter
+"""
+for i in "hello world":
+    print(i)
+"""
+
+# list - fetches item by item
+"""
+for i in [1,2.33,"hello world",False]:
+    print(i)
+"""
+
+# python bulit-in functions
+"""
+print()
+input()
+type()
+id()
+int()
+float()
+str()
+bool()
+"""
+
+# user defined function/method
+# syntax
+# def <func name>():
+
+# 1. func Creation + func calling
+"""
+def mithran():    # func creation/declaration
+    print("hello world !")
+    print("code inside mithran func")
+    print("end of mithran func")
+
+def myfun():
+    print("hello moon")
+    print("code inside myfun")
+
+myfun()
+mithran()
+myfun()
+"""
+
+# 2. func + arguments
+"""
+def myfun(a,b):             # a,b are parameter
+    print("the values passed are",a,b)
+
+
+myfun(44,66)                # argument
+myfun('hello world',77.99)
+"""
+
+# 3. func + default argument
+"""
+def myfun(a=0,b=0):             # a,b are parameter
+    print("the values passed are",a,b)
+
+myfun()                
+myfun(10) 
+myfun(b=10) 
+myfun(4,5)
+"""
+
+# 4. func + arbitrary argument
+# will store in a tuple
+"""
+def mithran(*values):        # *a is an arbitrary argument
+    print(values)
+    b = list(values)
+    print(b)
+
+mithran()
+mithran(1,2)
+mithran(1,2,236,32,6,'hello',77.88,100)
+print(1,2,5,7,'hi',6,89,4,43,5)
+"""
+
+# 5. func + return keyword
+"""
+def myfun():
+    print("hello world")
+    return 100
+
+def newfun():
+    print("hello moon")
+    return 500
+
+x = myfun() + newfun() + myfun()         # will return to func calling
+print(x)
+"""
+
+# example
+"""
+def myfun(a=20,b=20,c=50):  # a=20,b=30,c=50
+    return a+b+c
+
+def newfun(x=50,y=200):     # x=100,y=200
+    return y-x
+
+z = myfun(b=30) * newfun(100)
+print(z)
+"""
+
+# application
+# library
+
+# find a square root of a number
+# 25 = 5
+# 24 = ?
+
+"""
+import math
+x = math.sqrt(24)
+print(x)
+"""
+
+"""
+import myownlib
+print(myownlib.x)
+print(myownlib.y)
+z = myownlib.myfun()
+print(z)
+"""
+
+# pip - 
+
+"""
+import boto3
+x = boto3.resource('ec2')
+x.create_key_pair(KeyName='key1203')
+"""
+
+"""
+import boto3
+x = boto3.resource('ec2')
+x.create_instances(ImageId='ami-081bb417559035fe8',InstanceType='t2.micro',KeyName='key1203',MaxCount=3,MinCount=1)
+"""
+
+
+# 
+"""
+import boto3
+x = boto3.client('ec2')
+x.terminate_instances(InstanceIds=['i-06550803f14388213','i-040c1f88d8f12c771'])
+"""
+
+"""
+print("hello world")
+
+for i in "hello world":
+    print(i)
+
+for i in [1,2.33,"hello world"]:
+    print(i)
+"""
+
+import time
+import os
+
+os.mkdir("D:/helloworld")
+time.sleep(7)
+os.rmdir("D:/helloworld")
+
